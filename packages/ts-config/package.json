@@ -1,0 +1,10 @@
+{
+  "name": "@platform/ts-config",
+  "version": "0.1.0",
+  "private": true,
+  "files": [
+    "base.json",
+    "vue-app.json",
+    "library.json"
+  ]
+}
