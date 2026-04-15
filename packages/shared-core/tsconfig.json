@@ -1,0 +1,10 @@
+{
+  "extends": "@platform/ts-config/library.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "references": [{ "path": "../shared-types" }],
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts"]
+}
