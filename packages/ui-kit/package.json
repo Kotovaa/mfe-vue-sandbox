@@ -1,0 +1,39 @@
+{
+  "name": "@platform/ui-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "vite build && vue-tsc -b tsconfig.json --force --emitDeclarationOnly",
+    "typecheck": "vue-tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@platform/eslint-config": "*",
+    "@platform/ts-config": "*",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/vue3": "^8.4.7",
+    "@storybook/vue3-vite": "^8.4.7",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "storybook": "^8.4.7"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  }
+}
