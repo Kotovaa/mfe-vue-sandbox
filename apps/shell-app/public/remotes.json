@@ -1,0 +1,23 @@
+{
+  "version": "2026-05-06",
+  "remotes": [
+    {
+      "name": "dashboard_mfe",
+      "url": "http://localhost:4174/assets/remoteEntry.js",
+      "routePath": "/dashboard",
+      "module": "Module"
+    },
+    {
+      "name": "profile_mfe",
+      "url": "http://localhost:4175/assets/remoteEntry.js",
+      "routePath": "/profile",
+      "module": "Module"
+    },
+    {
+      "name": "billing_mfe",
+      "url": "http://localhost:4176/assets/remoteEntry.js",
+      "routePath": "/billing",
+      "module": "Module"
+    }
+  ]
+}
