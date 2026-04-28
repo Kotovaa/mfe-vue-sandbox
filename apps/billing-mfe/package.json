@@ -1,0 +1,26 @@
+{
+  "name": "@platform/billing-mfe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5176",
+    "build": "vue-tsc -p tsconfig.json --noEmit && vite build",
+    "typecheck": "vue-tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests",
+    "preview": "vite preview --host 0.0.0.0 --port 4176"
+  },
+  "dependencies": {
+    "@originjs/vite-plugin-federation": "^1.3.6",
+    "@platform/api-sdk": "*",
+    "@platform/shared-core": "*",
+    "@platform/shared-types": "*",
+    "@platform/ui-kit": "*",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@platform/eslint-config": "*",
+    "@platform/ts-config": "*"
+  }
+}
