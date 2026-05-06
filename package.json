@@ -1,5 +1,5 @@
 {
-  "name": "my-pet",
+  "name": "mfe-vue-sandbox",
   "version": "0.1.0",
   "private": true,
   "description": "Vue 3 микрофронтенды на Module Federation, песочница",
